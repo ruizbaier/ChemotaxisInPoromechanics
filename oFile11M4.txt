@@ -1,0 +1,62 @@
+Solving nonlinear variational problem.
+  Newton iteration 0: r (abs) = 6.916e+01 (tol = 5.000e-04) r (rel) = 1.000e+00 (tol = 5.000e-04)
+  Newton iteration 1: r (abs) = 6.427e-13 (tol = 5.000e-04) r (rel) = 9.293e-15 (tol = 5.000e-04)
+  Newton solver finished in 1 iterations and 1 linear solver iterations.
+Solving nonlinear variational problem.
+  Newton iteration 0: r (abs) = 4.565e+01 (tol = 5.000e-04) r (rel) = 1.000e+00 (tol = 5.000e-04)
+  Newton iteration 1: r (abs) = 1.547e+01 (tol = 5.000e-04) r (rel) = 3.388e-01 (tol = 5.000e-04)
+  Newton iteration 2: r (abs) = 6.286e-01 (tol = 5.000e-04) r (rel) = 1.377e-02 (tol = 5.000e-04)
+  Newton iteration 3: r (abs) = 2.228e-02 (tol = 5.000e-04) r (rel) = 4.880e-04 (tol = 5.000e-04)
+  Newton solver finished in 3 iterations and 3 linear solver iterations.
+Solving nonlinear variational problem.
+  Newton iteration 0: r (abs) = 3.523e+01 (tol = 5.000e-04) r (rel) = 1.000e+00 (tol = 5.000e-04)
+  Newton iteration 1: r (abs) = 8.305e+02 (tol = 5.000e-04) r (rel) = 2.358e+01 (tol = 5.000e-04)
+  Newton iteration 2: r (abs) = 2.630e+02 (tol = 5.000e-04) r (rel) = 7.466e+00 (tol = 5.000e-04)
+  Newton iteration 3: r (abs) = 1.576e+07 (tol = 5.000e-04) r (rel) = 4.473e+05 (tol = 5.000e-04)
+  Newton iteration 4: r (abs) = 2.909e+12 (tol = 5.000e-04) r (rel) = 8.258e+10 (tol = 5.000e-04)
+  Newton iteration 5: r (abs) = 2.088e+33 (tol = 5.000e-04) r (rel) = 5.926e+31 (tol = 5.000e-04)
+  Newton iteration 6: r (abs) = 6.513e+65 (tol = 5.000e-04) r (rel) = 1.849e+64 (tol = 5.000e-04)
+  Newton iteration 7: r (abs) = 1.138e+115 (tol = 5.000e-04) r (rel) = 3.230e+113 (tol = 5.000e-04)
+  Newton iteration 8: r (abs) = inf (tol = 5.000e-04) r (rel) = inf (tol = 5.000e-04)
+  Newton iteration 9: r (abs) = -nan (tol = 5.000e-04) r (rel) = -nan (tol = 5.000e-04)
+ **************** Mech Dof =  802965
+ **************** Electr Dof =  73728
+t=0.00
+t=100.00
+t=200.00
+t=300.00
+t=400.00
+t=500.00
+t=600.00
+t=700.00
+t=800.00
+t=900.00
+t=1000.00
+Traceback (most recent call last):
+  File "dhillon-growth-NH-3D_Fig11_MSet4.py", line 155, in <module>
+    'maximum_iterations':30}})
+  File "/usr/lib/python3/dist-packages/dolfin/fem/solving.py", line 220, in solve
+    _solve_varproblem(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/dolfin/fem/solving.py", line 266, in _solve_varproblem
+    solver.solve()
+RuntimeError: 
+
+*** -------------------------------------------------------------------------
+*** DOLFIN encountered an error. If you are not able to resolve this issue
+*** using the information listed below, you can ask for help at
+***
+***     fenics-support@googlegroups.com
+***
+*** Remember to include the error message listed below and, if possible,
+*** include a *minimal* running example to reproduce the error.
+***
+*** -------------------------------------------------------------------------
+*** Error:   Unable to solve linear system using PETSc Krylov solver.
+*** Reason:  Solution failed to converge in 0 iterations (PETSc reason DIVERGED_PCSETUP_FAILED, residual norm ||r|| = 0.000000e+00).
+*** Where:   This error was encountered inside PETScKrylovSolver.cpp.
+*** Process: 0
+*** 
+*** DOLFIN version: 2018.1.0
+*** Git changeset:  unknown
+*** -------------------------------------------------------------------------
+
